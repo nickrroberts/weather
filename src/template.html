@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <section id="search">
+        <div class="search-form">
+            <p>Search a place.</p>
+            <form>
+                <input id="searchQuery" type="text" placeholder="New York City, NY...">
+                <button>Get weather</button>
+            </form>
+            <div id="favorites"></div>
+        </div>       
+    </section>
+    <section class="result">
+        <div class="result-heading">
+            <h1 id="heading"></h1>
+        </div>     
+        <div id="result" class="empty-result">
+            <h1>Nothing here yet</h1>
+            <p>Try entering a place to fetch the weather.</p>
+        </div>
+    </section>
+</body>
+</html>

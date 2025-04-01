@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#search {
+    background: 
+      url('./assets/cloud.svg') no-repeat center/cover,
+      linear-gradient(to right, #AFDDE5, #0FA4AF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    min-height: 20rem;
+}
+
+.search-form {
+    width: 90%;
+    max-width: 60rem;
+}
+
+.search-form form {
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-form button {
+    background-color: #fff;
+    border-radius:  5px;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    transition: background-color 0.1s ease-in;
+
+}
+
+.search-form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.search-form input {
+    height: 3rem;
+    width: 80%;
+    padding-left: 0.25rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.result {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.empty-result {
+    color: gray;
+    text-align: center;
+}
+
+.filled {
+    justify-content: flex-start;
+}
+
+.filled-result {
+    width: 100%;   
+}
+
+#result {
+    max-width: 75vw;
+}
+
+.result-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.result-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.result-item {
+    background-color: rgb(249, 249, 249);
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.result-item p:first-child {
+    font-size: 1.5rem;
+}
+
+.result-item p + p {
+    color: rgb(75, 75, 75);
+    text-align: left;
+}
+
+.weather-icon {
+    font-size: 3rem;
+}
+
+.weather-label {
+    padding: 1rem;
+
+}
+
+.favorite {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#favorites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
